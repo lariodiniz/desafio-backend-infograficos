@@ -15,4 +15,4 @@ RUN pip install -r /infograficoApp/requirements.txt
 
 ADD . /infograficoApp/
 # Django service
-EXPOSE 8080
+EXPOSE 8000
