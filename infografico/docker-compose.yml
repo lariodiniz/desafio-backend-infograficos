@@ -1,0 +1,25 @@
+version: '3.5'
+
+services:
+  # Postgres
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always 
+    environment:
+      MYSQL_ROOT_PASSWORD: RootPassword
+      MYSQL_DATABASE: Backoffice
+      MYSQL_USER: MainUser
+      MYSQL_PASSWORD: MainPassword
+
+  web:
+    build: .
+    command: ["./start_config.sh"]
+    volumes:
+      - .:/infograficoApp
+    ports:
+      - "8000:8000"
+    links:
+      - db
+    depends_on:
+      - db
