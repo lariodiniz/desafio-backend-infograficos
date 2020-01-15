@@ -1,3 +1,5 @@
+__author__ = "Lário dos Santos Diniz"
+
 from django.test import TestCase
 
 from model_mommy import mommy
