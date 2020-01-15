@@ -1,2 +1,3 @@
 from .genre_model_test_case import GenreModelTestCase
 from .artist_model_test_case import ArtistModelTestCase
+from .album_model_test_case import AlbumModelTestCase
