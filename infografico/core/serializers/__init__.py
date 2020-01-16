@@ -1,0 +1,2 @@
+from .genre_serializer import GenreSerializer
+from .artist_serializer import ArtistSerializer

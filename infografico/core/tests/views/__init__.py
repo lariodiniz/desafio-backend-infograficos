@@ -1,0 +1,1 @@
+from .artist_views_test_case import ArtistViewTestCase
